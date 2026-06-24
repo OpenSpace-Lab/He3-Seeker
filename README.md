@@ -25,13 +25,13 @@ Submitted to the International Conference on Space Robotics (iSpaRo) 2026.
 <sup>1</sup>Institute of Automation, Chinese Academy of Sciences
 &nbsp;&nbsp;
 <sup>2</sup>Macau University of Science and Technology
-&nbsp;&nbsp;
+
 <sup>3</sup>China University of Petroleum-Beijing
 &nbsp;&nbsp;
 <sup>4</sup>Wuhan University
 &nbsp;&nbsp;
 <sup>5</sup>Shenzhen University
-&nbsp;&nbsp;
+
 <sup>6</sup>Technical University of Munich
 &nbsp;&nbsp;
 <sup>7</sup>Hong Kong University of Science and Technology
