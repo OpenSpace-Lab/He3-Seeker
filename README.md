@@ -20,7 +20,7 @@ Submitted to the International Conference on Space Robotics (iSpaRo) 2026.
 &nbsp;&nbsp;
 <a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN"><strong>Long Chen</strong></a><sup>1</sup>
 
-These authors contributed equally to this work.
+*These authors contributed equally to this work.
 <br>
 
 <sup>1</sup>Institute of Automation, Chinese Academy of Sciences
