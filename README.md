@@ -40,6 +40,13 @@ Submitted to the International Conference on Space Robotics (iSpaRo) 2026.
 
 </div>
 
+<div align="center">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2606.28746-b31b1b.svg)](https://arxiv.org/pdf/2606.28746)
+
+</div>
+
+<br>
 <p align="center">
 <img src="IMG/intro.png" width="100%">
 </p>
