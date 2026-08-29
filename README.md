@@ -4,7 +4,7 @@
 
 <div align="center">
 
-Submitted to the International Conference on Space Robotics (iSpaRo) 2026.
+Accepted by the International Conference on Space Robotics (iSpaRo) 2026.
 
 <a href="https://doongli.github.io/"><strong>Dong Li</strong></a><sup>1,2*</sup>
 &nbsp;&nbsp;
