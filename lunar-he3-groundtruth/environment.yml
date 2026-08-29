@@ -1,0 +1,11 @@
+name: he3
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.4
+  - scipy=1.17
+  - gdal=3.12
+  - rasterio=1.4
+  - matplotlib=3.10
+  - pillow=12.2
