@@ -62,10 +62,10 @@
       height: 100%;
     }
     .author-portrait-img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover; /* 自动等比例裁剪填充 */
-      border-radius: 50%; /* 统一切成圆形 */
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
       border: 3px solid #ffffff;
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
       transition: transform 0.2s ease-in-out;
@@ -125,7 +125,7 @@
     </div>
   </section>
 
-  <!-- 2. Intro 图放置在 Abstract 之前 -->
+  <!-- Intro 图前置于 Abstract -->
   <section class="hero teaser" style="padding-bottom: 1.5rem;">
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered" style="padding: 0 1.5rem;">
@@ -200,7 +200,7 @@
     </div>
   </section>
 
-  <!-- 1. 整合统一的作者与头像 Team Section -->
+  <!-- Team Section: 分两行且去除个人单位中的 OpenSpace Lab -->
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Team & Authors</h2>
@@ -209,41 +209,42 @@
         * Equal contribution &nbsp;&nbsp;|&nbsp;&nbsp; † Corresponding Author: <a href="mailto:long.chen@ia.ac.cn">long.chen@ia.ac.cn</a>
       </div>
 
-      <div class="columns is-multiline is-centered">
+      <!-- 第一行：前 5 位作者 -->
+      <div class="columns is-centered is-multiline mb-4">
         <!-- Dong Li -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://doongli.github.io/" target="_blank">
-              <img src="IMG/dong_li.png" class="author-portrait-img" alt="Dong Li" onerror="this.src='https://via.placeholder.com/120?text=Dong+Li';">
+              <img src="IMG/dong_li.png" class="author-portrait-img" alt="Dong Li" loading="lazy">
             </a>
             <div class="author-name"><a href="https://doongli.github.io/" target="_blank">Dong Li</a><sup>*</sup></div>
-            <div class="author-affiliation">OpenSpace Lab<br>Institute of Automation, CAS</div>
+            <div class="author-affiliation">Institute of Automation, CAS</div>
           </div>
         </div>
 
         <!-- Yujie Zheng -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
-            <img src="IMG/yujie_zheng.png" class="author-portrait-img" alt="Yujie Zheng" onerror="this.src='https://via.placeholder.com/120?text=Yujie+Zheng';">
+            <img src="IMG/yujie_zheng.png" class="author-portrait-img" alt="Yujie Zheng" loading="lazy">
             <div class="author-name">Yujie Zheng<sup>*</sup></div>
             <div class="author-affiliation">China University of Petroleum (Beijing)</div>
           </div>
         </div>
 
         <!-- Chengdeng Cao -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
-            <img src="IMG/chengdeng_cao.png" class="author-portrait-img" alt="Chengdeng Cao" onerror="this.src='https://via.placeholder.com/120?text=Chengdeng+Cao';">
+            <img src="IMG/chengdeng_cao.png" class="author-portrait-img" alt="Chengdeng Cao" loading="lazy">
             <div class="author-name">Chengdeng Cao</div>
-            <div class="author-affiliation">OpenSpace Lab<br>Wuhan University</div>
+            <div class="author-affiliation">Wuhan University</div>
           </div>
         </div>
 
         <!-- Siyu Teng -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://facultyce.szu.edu.cn/siyuteng/zh_CN/index.htm" target="_blank">
-              <img src="IMG/siyu_teng.png" class="author-portrait-img" alt="Siyu Teng" onerror="this.src='https://via.placeholder.com/120?text=Siyu+Teng';">
+              <img src="IMG/siyu_teng.png" class="author-portrait-img" alt="Siyu Teng" loading="lazy">
             </a>
             <div class="author-name"><a href="https://facultyce.szu.edu.cn/siyuteng/zh_CN/index.htm" target="_blank">Siyu Teng</a></div>
             <div class="author-affiliation">Shenzhen University</div>
@@ -251,21 +252,24 @@
         </div>
 
         <!-- Yuchen Li -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://scholar.google.com/citations?user=obmi8lYAAAAJ&hl=zh-CN" target="_blank">
-              <img src="IMG/yuchen_li.png" class="author-portrait-img" alt="Yuchen Li" onerror="this.src='https://via.placeholder.com/120?text=Yuchen+Li';">
+              <img src="IMG/yuchen_li.png" class="author-portrait-img" alt="Yuchen Li" loading="lazy">
             </a>
             <div class="author-name"><a href="https://scholar.google.com/citations?user=obmi8lYAAAAJ&hl=zh-CN" target="_blank">Yuchen Li</a></div>
-            <div class="author-affiliation">OpenSpace Lab<br>Technical University of Munich</div>
+            <div class="author-affiliation">Technical University of Munich</div>
           </div>
         </div>
+      </div>
 
+      <!-- 第二行：仅放置 Yang Gao 和 Long Chen -->
+      <div class="columns is-centered mb-2">
         <!-- Yang Gao -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://yanggao.people.ust.hk/" target="_blank">
-              <img src="IMG/yang_gao.png" class="author-portrait-img" alt="Yang Gao" onerror="this.src='https://via.placeholder.com/120?text=Yang+Gao';">
+              <img src="IMG/yang_gao.png" class="author-portrait-img" alt="Yang Gao" loading="lazy">
             </a>
             <div class="author-name"><a href="https://yanggao.people.ust.hk/" target="_blank">Yang Gao</a></div>
             <div class="author-affiliation">Hong Kong University of Science and Technology</div>
@@ -273,16 +277,17 @@
         </div>
 
         <!-- Long Chen -->
-        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN" target="_blank">
-              <img src="IMG/long_chen.png" class="author-portrait-img" alt="Long Chen" onerror="this.src='https://via.placeholder.com/120?text=Long+Chen';">
+              <img src="IMG/long_chen.png" class="author-portrait-img" alt="Long Chen" loading="lazy">
             </a>
             <div class="author-name"><a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN" target="_blank">Long Chen</a><sup>†</sup></div>
-            <div class="author-affiliation">OpenSpace Lab<br>Institute of Automation, CAS</div>
+            <div class="author-affiliation">Institute of Automation, CAS</div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
