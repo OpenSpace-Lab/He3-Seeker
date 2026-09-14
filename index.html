@@ -1,58 +1,70 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>He3-Seeker: Autonomous Lunar Helium-3 Prospecting Robot</title>
+  <title>He3-Seeker: Robotic Information Planning for Lunar Helium-3 Distribution Mapping</title>
 
-  <!-- Bulma & Fonts -->
+  <!-- Bulma & Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <style>
-    .hero-body { padding: 3rem 1.5rem 1rem; }
+    .hero-body { padding: 3rem 1.5rem 1.5rem; }
     .publication-title { font-weight: 800; }
-    .publication-authors { font-weight: 600; }
-    .author-block { display: inline-block; margin-right: 15px; }
-    .teaser-img { max-height: 400px; width: auto; margin: 0 auto; display: block; }
-    .content-block { margin-top: 2rem; }
+    .publication-authors { font-weight: 600; line-height: 1.8; }
+    .author-block { display: inline-block; margin-right: 12px; }
+    .teaser-img { max-height: 480px; width: auto; margin: 0 auto; display: block; border-radius: 8px; }
+    .box-custom { background: #f8f9fa; border-radius: 8px; padding: 1.5rem; height: 100%; }
   </style>
 </head>
 <body>
 
-  <!-- Title & Authors Section -->
+  <!-- Hero / Header -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
-        <h1 class="title is-1 publication-title">He3-Seeker</h1>
-        <h2 class="subtitle is-3">Autonomous Lunar Helium-3 Prospecting & Exploration Architecture</h2>
+        <h1 class="title is-2 publication-title">He3-Seeker: Robotic Information Planning for Lunar Helium-3 Distribution Mapping</h1>
+        <div class="is-size-5 publication-authors" style="color: #4a4a4a; margin-bottom: 10px;">
+          Accepted by <strong>iSpaRo 2026</strong>
+        </div>
 
         <div class="is-size-5 publication-authors">
-          <span class="author-block"><a href="#">OpenSpace-Lab Team</a></span>
+          <span class="author-block"><a href="https://doongli.github.io/">Dong Li</a><sup>1,2*</sup></span>
+          <span class="author-block">Yujie Zheng<sup>3*</sup></span>
+          <span class="author-block">Chengdeng Cao<sup>1,4</sup></span>
+          <span class="author-block"><a href="https://facultyce.szu.edu.cn/siyuteng/zh_CN/index.htm">Siyu Teng</a><sup>5</sup></span>
+          <span class="author-block"><a href="https://scholar.google.com/citations?user=obmi8lYAAAAJ&hl=zh-CN">Yuchen Li</a><sup>1,6</sup></span>
+          <span class="author-block"><a href="https://yanggao.people.ust.hk/">Yang Gao</a><sup>7</sup></span>
+          <span class="author-block"><a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN">Long Chen</a><sup>1,2†</sup></span>
         </div>
 
-        <div class="is-size-6 publication-authors" style="margin-top: 5px;">
-          <span class="author-block">Institute of Automation, Chinese Academy of Sciences (CASIA)</span>
+        <div class="is-size-6 publication-authors" style="margin-top: 10px;">
+          <sup>1</sup>OpenSpace Lab &nbsp;&nbsp;|&nbsp;&nbsp; 
+          <sup>2</sup>Institute of Automation, Chinese Academy of Sciences<br>
+          <sup>3</sup>China University of Petroleum (Beijing) &nbsp;&nbsp;|&nbsp;&nbsp; 
+          <sup>4</sup>Wuhan University &nbsp;&nbsp;|&nbsp;&nbsp; 
+          <sup>5</sup>Shenzhen University<br>
+          <sup>6</sup>Technical University of Munich &nbsp;&nbsp;|&nbsp;&nbsp; 
+          <sup>7</sup>Hong Kong University of Science and Technology
         </div>
 
-        <!-- Links Buttons -->
+        <div class="is-size-7" style="margin-top: 5px; color: #7a7a7a;">
+          * Equal contribution &nbsp;&nbsp;|&nbsp;&nbsp; † Corresponding Author: long.chen@ia.ac.cn
+        </div>
+
+        <!-- Links -->
         <div class="column has-text-centered" style="margin-top: 15px;">
           <div class="publication-links">
-            <!-- Paper Link -->
-            <a href="#" class="external-link button is-normal is-rounded is-dark">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
-              <span>Paper</span>
+            <a href="https://arxiv.org/pdf/2606.28746" class="button is-normal is-rounded is-dark">
+              <span class="icon"><i class="ai ai-arxiv"></i></span>
+              <span>arXiv</span>
             </a>
-            <!-- Code Link -->
-            <a href="https://github.com/OpenSpace-Lab/He3-Seeker" class="external-link button is-normal is-rounded is-dark">
+            <a href="https://github.com/OpenSpace-Lab/He3-Seeker" class="button is-normal is-rounded is-dark">
               <span class="icon"><i class="fab fa-github"></i></span>
-              <span>Code</span>
-            </a>
-            <!-- Dataset/Model Link -->
-            <a href="#" class="external-link button is-normal is-rounded is-dark">
-              <span class="icon"><i class="fas fa-database"></i></span>
-              <span>Data</span>
+              <span>Code & Data</span>
             </a>
           </div>
         </div>
@@ -60,19 +72,19 @@
     </div>
   </section>
 
-  <!-- Teaser Figure -->
+  <!-- Teaser Section -->
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered">
-        <img src="static/images/teaser.jpg" class="teaser-img" alt="He3-Seeker Overview">
-        <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
-          <strong>He3-Seeker</strong> achieves autonomous active exploration and resource prospecting in challenging extra-terrestrial environments.
+        <img src="IMG/intro.png" class="teaser-img" alt="He3-Seeker Overview">
+        <h2 class="subtitle has-text-centered" style="margin-top: 15px; font-size: 1rem; color: #555;">
+          Conceptual diagram of dynamic dense spatial mapping of lunar Helium-3 via mobile robotic multi-point sampling and analysis.
         </h2>
       </div>
     </div>
   </section>
 
-  <!-- Abstract Section -->
+  <!-- Abstract -->
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -80,8 +92,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Helium-3 (He-3) prospect exploration on the lunar surface presents significant challenges due to uneven terrain, extreme illumination conditions, and severe communication latency. 
-              We present <strong>He3-Seeker</strong>, an integrated robotic perception, planning, and active exploration framework tailored for planetary surface exploration and spectral resource detection.
+              Lunar helium-3 is a highly valuable strategic resource, pivotal to the advancement of both deep-space exploration and space mining. Existing lunar helium-3 exploration methodologies rely primarily on indirect measurements via remote sensing, which are often characterized by limited precision, low reliability, and insufficient spatial resolution. In this paper, we introduce <strong>He3-Seeker</strong>, an active robotic exploration method for helium-3 distribution mapping. First, we provide a formal definition of the active helium-3 exploration problem. We then develop the He3-Seeker framework, which is conceptually based on multi-point drilling, sampling, and <em>in situ</em> analysis. In particular, we use robotic information planning to guide autonomous robot navigation and active sensing. Additionally, to evaluate the proposed algorithm, we introduce a reliable method for generating reference data of lunar helium-3 distribution based on low-resolution orbital remote sensing measurements. Simulation experiments verify that He3-Seeker enables fast, high-fidelity helium-3 distribution for resource exploration tasks.
             </p>
           </div>
         </div>
@@ -89,36 +100,35 @@
     </div>
   </section>
 
-  <!-- Key Technical Contributions -->
+  <!-- Core Pipeline -->
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Key System Pipeline</h2>
-      
-      <div class="columns is-centered">
-        <div class="column">
-          <div class="box">
-            <h3 class="title is-4">1. Active SLAM & Perception</h3>
-            <p>Provides robust 3D mapping and pose estimation under low-texture and uneven lunar terrain using multimodal sensor fusion.</p>
+      <h2 class="title is-3 has-text-centered">Framework Architecture</h2>
+      <div class="columns is-centered style="margin-top: 10px;">
+        <div class="column is-half">
+          <div class="box-custom">
+            <h3 class="title is-5">1. Gaussian Process Field Modeling</h3>
+            <p>Models unknown continuous helium-3 fields using spatial Gaussian Process (GP) regression to derive predicted mean concentrations and quantify epistemic uncertainty under sparse drilling samples.</p>
           </div>
         </div>
-        <div class="column">
-          <div class="box">
-            <h3 class="title is-4">2. Resource Prospecting Planner</h3>
-            <p>Optimizes exploration trajectories by balancing information gain with spectral target likelihoods for efficient He-3 mining site identification.</p>
+        <div class="column is-half">
+          <div class="box-custom">
+            <h3 class="title is-5">2. Informative Path Planning (RRT*)</h3>
+            <p>Employs an RRT*-based planner optimizing a joint utility function (balancing entropy-reduction information gain against traversal cost) to navigate over hazardous lunar terrains.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BibTeX Section -->
+  <!-- Citation Section -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{he3seeker2026,
-  title     = {He3-Seeker: Autonomous Lunar Helium-3 Prospecting Robot Framework},
-  author    = {OpenSpace-Lab Team},
-  journal   = {arXiv preprint},
+      <pre><code>@inproceedings{li2026he3seeker,
+  title     = {He3-Seeker: Robotic Information Planning for Lunar Helium-3 Distribution Mapping},
+  author    = {Li, Dong and Zheng, Yujie and Cao, Chengdeng and Teng, Siyu and Li, Yuchen and Gao, Yang and Chen, Long},
+  booktitle = {International Conference on Space Robotics (iSpaRo)},
   year      = {2026}
 }</code></pre>
     </div>
