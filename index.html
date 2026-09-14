@@ -15,7 +15,7 @@
     .hero-body { padding: 3rem 1.5rem 1rem; }
     .publication-title { font-weight: 800; font-size: 2.2rem; }
     
-    /* OpenSpace Lab 高亮标识 */
+    /* OpenSpace Lab 高亮标识与链接样式 */
     .lead-lab-banner {
       display: inline-block;
       background: linear-gradient(135deg, #0d6efd, #0b5ed7);
@@ -27,6 +27,13 @@
       box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
       margin-bottom: 16px;
       letter-spacing: 0.5px;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+    }
+    .lead-lab-banner:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(13, 110, 253, 0.35);
     }
 
     /* 图片通用样式 */
@@ -97,11 +104,11 @@
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
         
-        <!-- OpenSpace Lab 突出展示 -->
+        <!-- OpenSpace Lab 突出展示（可点击） -->
         <div>
-          <span class="lead-lab-banner">
+          <a href="https://github.com/OpenSpace-Lab" target="_blank" class="lead-lab-banner">
             <i class="fa-solid fa-rocket" style="margin-right: 8px;"></i>OpenSpace Lab
-          </span>
+          </a>
         </div>
 
         <h1 class="title publication-title">He3-Seeker: Robotic Information Planning for Lunar Helium-3 Distribution Mapping</h1>
