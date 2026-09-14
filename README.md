@@ -43,6 +43,7 @@ Accepted by the International Conference on Space Robotics (iSpaRo) 2026.
 <br>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.28746-b31b1b.svg)](https://arxiv.org/pdf/2606.28746)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://openspace-lab.github.io/He3-Seeker/)
 
 </div>
 <br>
@@ -54,5 +55,3 @@ Accepted by the International Conference on Space Robotics (iSpaRo) 2026.
 
 - [`lunar-he3-groundtruth/`](./lunar-he3-groundtruth): Contains the physically consistent simulation pipeline and generated benchmark datasets for lunar helium-3 distribution maps.
 - [`lunar-he3-ipp/`](./lunar-he3-ipp): Contains the implementation of the robotic informative path planning algorithms (including He3-Seeker and baselines) for active distribution mapping.
-
-
