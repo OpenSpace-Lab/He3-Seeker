@@ -29,7 +29,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* Teaser & Pipeline 图片样式 */
+    /* 图片通用样式 */
     .teaser-img { 
       max-height: 480px; 
       width: auto; 
@@ -38,7 +38,7 @@
       border-radius: 8px; 
       box-shadow: 0 4px 16px rgba(0,0,0,0.08); 
     }
-    .pipeline-img { 
+    .pipeline-img, .map-img { 
       width: 100%; 
       max-width: 960px; 
       height: auto; 
@@ -94,7 +94,7 @@
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
         
-        <!-- OpenSpace Lab 突出独立展示 -->
+        <!-- OpenSpace Lab 突出展示 -->
         <div>
           <span class="lead-lab-banner">
             <i class="fa-solid fa-rocket" style="margin-right: 8px;"></i>OpenSpace Lab
@@ -125,7 +125,7 @@
     </div>
   </section>
 
-  <!-- Intro 图前置于 Abstract -->
+  <!-- Intro Overview Image -->
   <section class="hero teaser" style="padding-bottom: 1.5rem;">
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered" style="padding: 0 1.5rem;">
@@ -191,6 +191,14 @@
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Benchmark Scenarios</h2>
+      
+      <div class="has-text-centered" style="margin-top: 20px; margin-bottom: 25px;">
+        <img src="IMG/map.png" class="map-img" alt="He3-Seeker Benchmark Maps">
+        <p class="subtitle has-text-centered" style="margin-top: 12px; font-size: 0.95rem; color: #555;">
+          Lunar landing site benchmark environments generated for algorithm evaluation: Taurus-Littrow (Region T1) and Hadley Rille (Region T2).
+        </p>
+      </div>
+
       <div class="content">
         <ul>
           <li><strong>Region T1 — Taurus-Littrow (Apollo 17 Landing Site):</strong> Centered at (20.190°N, 30.772°E), featuring high Helium-3 concentration variations (4.82 to 13.47 ppb) across complex terrains.</li>
@@ -200,7 +208,7 @@
     </div>
   </section>
 
-  <!-- Team Section: 分两行且去除个人单位中的 OpenSpace Lab -->
+  <!-- Team & Authors Section (修正图片路径与文件名大小写) -->
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Team & Authors</h2>
@@ -209,13 +217,13 @@
         * Equal contribution &nbsp;&nbsp;|&nbsp;&nbsp; † Corresponding Author: <a href="mailto:long.chen@ia.ac.cn">long.chen@ia.ac.cn</a>
       </div>
 
-      <!-- 第一行：前 5 位作者 -->
+      <!-- 第一行作者：5 列布局 -->
       <div class="columns is-centered is-multiline mb-4">
         <!-- Dong Li -->
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://doongli.github.io/" target="_blank">
-              <img src="IMG/dong_li.png" class="author-portrait-img" alt="Dong Li" loading="lazy">
+              <img src="IMG/DONGLI.png" class="author-portrait-img" alt="Dong Li" loading="lazy">
             </a>
             <div class="author-name"><a href="https://doongli.github.io/" target="_blank">Dong Li</a><sup>*</sup></div>
             <div class="author-affiliation">Institute of Automation, CAS</div>
@@ -225,7 +233,7 @@
         <!-- Yujie Zheng -->
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
-            <img src="IMG/yujie_zheng.png" class="author-portrait-img" alt="Yujie Zheng" loading="lazy">
+            <img src="IMG/Yujie_ZHENG.jpg" class="author-portrait-img" alt="Yujie Zheng" loading="lazy">
             <div class="author-name">Yujie Zheng<sup>*</sup></div>
             <div class="author-affiliation">China University of Petroleum (Beijing)</div>
           </div>
@@ -255,7 +263,7 @@
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://scholar.google.com/citations?user=obmi8lYAAAAJ&hl=zh-CN" target="_blank">
-              <img src="IMG/yuchen_li.png" class="author-portrait-img" alt="Yuchen Li" loading="lazy">
+              <img src="IMG/Yuchen_Li.jpg" class="author-portrait-img" alt="Yuchen Li" loading="lazy">
             </a>
             <div class="author-name"><a href="https://scholar.google.com/citations?user=obmi8lYAAAAJ&hl=zh-CN" target="_blank">Yuchen Li</a></div>
             <div class="author-affiliation">Technical University of Munich</div>
@@ -263,7 +271,7 @@
         </div>
       </div>
 
-      <!-- 第二行：仅放置 Yang Gao 和 Long Chen -->
+      <!-- 第二行作者：仅放置 Yang Gao 和 Long Chen -->
       <div class="columns is-centered mb-2">
         <!-- Yang Gao -->
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
@@ -280,7 +288,7 @@
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN" target="_blank">
-              <img src="IMG/long_chen.png" class="author-portrait-img" alt="Long Chen" loading="lazy">
+              <img src="IMG/LongChen.jpg" class="author-portrait-img" alt="Long Chen" loading="lazy">
             </a>
             <div class="author-name"><a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN" target="_blank">Long Chen</a><sup>†</sup></div>
             <div class="author-affiliation">Institute of Automation, CAS</div>
