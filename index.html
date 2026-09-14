@@ -51,7 +51,7 @@
     .box-custom { background: #ffffff; border-radius: 8px; padding: 1.5rem; height: 100%; border: 1px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
     .bibtex-box { background-color: #f5f5f5; border-radius: 6px; padding: 1rem; font-family: monospace; }
     
-    /* 统一头像卡片样式 */
+    /* 统一头像卡片与渲染优化样式 */
     .author-portrait-card {
       text-align: center;
       padding: 12px;
@@ -69,6 +69,9 @@
       border: 3px solid #ffffff;
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
       transition: transform 0.2s ease-in-out;
+      /* 图像渲染及采样优化 */
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
     }
     .author-portrait-img:hover {
       transform: scale(1.05);
@@ -208,7 +211,7 @@
     </div>
   </section>
 
-  <!-- Team & Authors Section (修正图片路径与文件名大小写) -->
+  <!-- Team & Authors Section -->
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Team & Authors</h2>
@@ -277,7 +280,7 @@
         <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile">
           <div class="author-portrait-card">
             <a href="https://yanggao.people.ust.hk/" target="_blank">
-              <img src="IMG/yang_gao.jpg" class="author-portrait-img" alt="Yang Gao" loading="lazy">
+              <img src="IMG/yang_gao.png" class="author-portrait-img" alt="Yang Gao" loading="lazy">
             </a>
             <div class="author-name"><a href="https://yanggao.people.ust.hk/" target="_blank">Yang Gao</a></div>
             <div class="author-affiliation">Hong Kong University of Science and Technology</div>
